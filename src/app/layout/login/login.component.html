@@ -1,0 +1,35 @@
+<div style=" width: 100vw; height: 100vh;" id="princLogin" class="d-flex justify-content-center align-items-center">
+    <div class="col-lg-4 col-md-12">
+        <form class="card" [formGroup]="loginForm">
+            <div class="card-header card-header-success">
+                <div class="d-flex justify-content-center col-md-12">
+                    <h4 class="card-title">Entrar no sistema</h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-description text-center">Formulário de acesso ao sistema do condominio Max Wolf</p>
+                <span class="bmd-form-group">
+                    <div class="input-group">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="cpf" type="text" formControlName="cpf" class="validate" required>
+                            <label for="cpf">CPF</label>
+                        </div>
+                    </div>
+                </span>
+                <span class="bmd-form-group">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input id="senha" type="password" formControlName="senha" class="validate" required>
+                        <label for="senha">SENHA</label>
+                    </div>
+                </span>
+            </div>
+            <div class="card-footer justify-content-around">
+                <button (click)="entrar()" [disabled]="!loginForm.valid" class="waves-effect waves-light btn-small green darken-3">Entrar</button>
+                <button class="waves-effect waves-light btn-small lime darken-1">Primeiro Acesso</button>
+            </div>
+            <br/>
+        </form>
+    </div>
+</div>

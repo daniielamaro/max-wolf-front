@@ -1,0 +1,11 @@
+.formLogin{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#princLogin{
+    background-image: url("../../../assets/img/backgroundLogin.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
